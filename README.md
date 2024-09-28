@@ -1,0 +1,1 @@
+This is a informational website about the Rockstar Games company, where you can know about the history, finances and products of the company. This website is also non-commercial, and it was made for educating so go easy on this product.
