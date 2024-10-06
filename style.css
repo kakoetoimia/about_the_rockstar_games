@@ -24,7 +24,18 @@
     text-decoration: none;
     color: black;
     margin-left: 125px;
+}
+#to_products:hover{
     box-shadow: 0px 0px 25px 5px orangered;
+    padding: 15px;
+    transition: all 0.5s;
+    font-size: 52px;
+}
+#to_products:not(:hover){
+    box-shadow: 0px 0px 0px 0px orangered;
+    padding: 10px;
+    transition: all 0.5s;
+    font-size: 48px;
 }
 h1{
     font-size: 120px;
@@ -74,17 +85,29 @@ p{
     border: red solid 5px;
     background-color: orange;
     color: black;
-    padding: 50px;
+    padding: 30px;
     font-size: 24px;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 25px 5px orangered;
+    
+}
+.history:hover{
+    box-shadow: 0px 0px 40px 5px orangered;
+    padding: 50px;
+    margin: 15px 100px;
+    transition: all 0.7s;
+}
+.history:not(:hover){
+    box-shadow: 0px 0px 0px 0px orangered;
+    padding: 30px;
+    margin: 25px 125px;
+    transition: all 0.7s;
 }
 .app{
     text-align: none;
     text-decoration: none;
     color:white;
-
+    font-size: medium;
 }
 .iapp{
     width: 500px;
@@ -92,6 +115,25 @@ p{
     border-radius: 50px;
     object-fit: cover;
 
+}
+.iapp:hover{
+    width: 550px;
+    height: 400px;
+    transition: 0.7s;
+    box-shadow: 0px 0px 25px 5px orangered;
+}
+.iapp:not(:hover){
+    width: 500px;
+    height: 350px;
+    transition: 0.7s;
+}
+.app:hover{
+    font-size: larger;
+    transition: all 0.5s;
+}
+.app:not(:hover){
+    font-size: medium;
+    transition: all 0.5s;
 }
 #products{
     display: flex;
