@@ -14,6 +14,14 @@
     text-decoration: none;
     color: white;
 }
+.mb:hover{
+    color: gray;
+    transition: all 0.3s;
+}
+.mb:not(:hover){
+    color: white;
+    transition: all 0.3s;
+}
 #to_products{
     background-color: orange;
     margin: 10px;
@@ -43,6 +51,10 @@ h1{
     position: relative;
     margin-left: 125px;
     margin-top: 125px;
+    animation-name:txt_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
 body{
     background-color: #212121;
@@ -53,6 +65,9 @@ body{
 h2{
     font-size: 64px;
     margin-left: 70px;
+    animation-name:txt_anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 .logo>img{
     width: 30%;
@@ -63,6 +78,10 @@ h2{
 .logo{
     display: flex;
     justify-content: space-between;
+    animation-name:txt_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 
 }
 hr{
@@ -149,7 +168,9 @@ footer{
 }
 h3{
     font-size: 48px;
-    
+    animation-name:txt_anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 .footer_text{
     margin-bottom: 0;
@@ -163,4 +184,20 @@ h3{
 }
 .main_txt{
     text-align: center;
+}
+@keyframes txt_anim{
+    0%{
+        opacity: 0%;
+        right: 50px;
+
+    }
+    100%{
+        opacity: 100%;
+        right:0px;
+    }
+}
+p{
+    animation-name:txt_anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
